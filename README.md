@@ -16,4 +16,4 @@ This application can be used by any business to maintain and update inventory da
 This application requires Node.js, MySQL, Sequelize, and Inquirer.
 
 ## Demonstration
-[Walkthrough of Application](https://drive.google.com/file/d/1DZYyqvza30KqkU6lcp1LFWPkSs7LcoGh/view?usp=sharing)
+[Walkthrough of Application](https://drive.google.com/file/d/1VhtVlNhg7Yc0XBj9hXeB5_sOoMa2mrZn/view?usp=sharing)
