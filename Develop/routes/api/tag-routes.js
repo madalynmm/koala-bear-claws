@@ -25,7 +25,9 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
-  Tag.create(req.body.tag_name)
+  Tag.create({
+    tag_name: req.body.tag_name
+  })
     .then((newTag) => {
       res.json(newTag);
     });
@@ -33,8 +35,14 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  Tag.update(req.body.tag_id)
-    .then((updatedTag) => {
+  Tag.update({
+    tag_name: req.body.tag_name
+  }, 
+  {
+    where: {
+      id: req.params.id
+    }
+  }).then((updatedTag) => {
       res.json(updatedTag);
     }); 
 });
